@@ -1,12 +1,11 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Erdison's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="new_style.css" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -14,16 +13,16 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
+          <li><a href="#experience">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
     </nav>
-    <nav id="hamburger-nav">
+    <nav id="main-nav">
       <div class="logo">Erdison Malko</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+      <div class="main-menu">
+        <div class="main-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
           <span></span>
@@ -37,91 +36,80 @@
       </div>
     </nav>
     <section id="profile">
-<!--       <div class="section__pic-container">
-        <img src="./assets/empty-profile.png" alt="erdison profile picture" />
-      </div> -->
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.jpg" alt="Erdison Malko profile picture">
+      </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Erdison Malko</h1>
-        <p class="section__text__p2">Beckend Developer</p>
+        <p class="section__text__p2">Backend Developer</p>
         <div class="btn-container">
-          <a href="./assets/Erdison-Malko-CV-n.pdf" download>
-            <button class="btn btn-color-2">
-              Download CV
-            </button>
+          <a href="./assets/Erdison-Malko-CV-bd.pdf" download>
+            <button class="btn btn-color-2">Download CV</button>
           </a>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon" 
-            onclick="location.href='https://www.linkedin.com/in/erdison-malko-06b617235/'" 
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Soni912108?tab=repositories'"
-          />
+          <a href="https://www.linkedin.com/in/erdison-malko-06b617235/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/Soni912108?tab=repositories" target="_blank" rel="noopener noreferrer">
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
         </div>
       </div>
     </section>
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Backend Development</p>
+            <div class="text-container">
+              <p>
+                Passionate Backend Developer with 2+ years of experience crafting and deploying robust, scalable web applications. My expertise lies in:
+              </p>
+              <ul>
+                <li>Building high-performance backends and APIs using Python (Flask/Django) and Node.js (Express)</li>
+                <li>Deploying and maintaining applications on cloud platforms like Azure</li>
+                <li>Leveraging Git/GitHub for efficient version control and collaboration</li>
+                <li>Specializing in web scraping with Selenium for data acquisition</li>
+                <li>Conducting in-depth data analysis using Pandas and other Python libraries</li>
+              </ul>
+              <p>
+                While backend development is my forte, I possess a solid understanding of frontend technologies such as React, HTML, and CSS. This full-stack awareness allows me to contribute to creating seamless, user-centric web experiences.
+              </p>
             </div>
             <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p> Software Development Academy Degree</p>
+              <div class="education-header">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+              </div>
+              <p>Software Development Academy Degree</p>
               <p>Python from Scratch</p>
-              <a href="https://app.diplomasafe.com/en-US/diploma/d4a52ecc8309529e8af8b1de7d370bfb1a785b42b">Link</a>
+              <a href="https://app.diplomasafe.com/en-US/diploma/d4a52ecc8309529e8af8b1de7d370bfb1a785b42b" target="_blank">View Diploma</a>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Backend Developer with 2+ years of experience building and deploying web applications. Leveraging Python (Flask/Django) and Node.js (Express) 
-              to craft robust and scalable backends and APIs. 
-              While my primary focus is on the backend, I have a working knowledge of frontend technologies like React, HTML, and CSS, ensuring a cohesive user experience.
-
-              Experienced in deploying and maintaining applications on cloud platforms like Azure, with a strong understanding of cloud fundamentals and
-              Git/GitHub for version control. 
-              Beyond backend development, I specialize in web scraping with Selenium and data analysis using Pandas and other Python packages.
-            </p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Skills</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="experience-containers">
           <div class="details-container">
             <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
@@ -136,6 +124,7 @@
                   <p>Experienced</p>
                 </div>
               </article>
+
               <article>
                 <img
                   src="./assets/checkmark.png"
@@ -158,7 +147,7 @@
                   <p>Experienced</p>
                 </div>
               </article>
-<!--               <article>
+              <article>
                 <img
                   src="./assets/checkmark.png"
                   alt="Experience icon"
@@ -168,7 +157,7 @@
                   <h3>Rest APIs</h3>
                   <p>Intermediate</p>
                 </div>
-              </article> -->
+              </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
@@ -283,18 +272,12 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+
     </section>
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="projects-containers">
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -307,14 +290,15 @@
             <div class="btn-container">
               <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Soni912108/chat-app'"
+                href="https://github.com/Soni912108/chat-app"
                 target="_blank"
+                
               >
                 Github
               </a>
               <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://chatapp2.azurewebsites.net/'"
+                href="https://chatapp2.azurewebsites.net/"
                 target="_blank"
               >
                 ChatApp
@@ -324,7 +308,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/taskmanager.png"
+                src="./assets/taskmanager.jpg"
                 alt="Project 1"
                 class="project-img"
               />
@@ -333,39 +317,39 @@
             <div class="btn-container">
               <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Soni912108/expressApp'"
+                href='https://github.com/Soni912108/expressApp'
                 target="_blank"
               >
                 Github
               </a>
               <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://react-app-psi-wheat.vercel.app/'"
+                href='https://react-app-psi-wheat.vercel.app/'
                 target="_blank"
               >
                 TaskManger
               </a>
             </div>
           </div>
-<!--           <div class="details-container color-container">
+          <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/chatbot.avif"
+                src="./assets/inventory-app.jpg"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">ReactJS app</h2>
+            <h2 class="experience-sub-title project-title">Inventory App</h2>
             <div class="btn-container">
               <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Soni912108/react-app'"
+                href='https://github.com/Soni912108/Inventory-App'
                 target="_blank"
               >
                 Github
               </a>
             </div>
-          </div> -->
+          </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -378,44 +362,19 @@
             <div class="btn-container">
               <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Soni912108/hr_assistant'"
+                href='https://github.com/Soni912108/hr_assistant'
                 target="_blank"
               >
                 Github
               </a>
             </div>
           </div>
-<!--           <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/resume.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Resume</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Soni912108/erdison_portfolio'"
-                target="_blank"
-              >
-                Github
-              </a>
-            </div> -->
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
     </section>
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
           <img
@@ -454,7 +413,7 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2024 Erdison Malko All Rights Reserved.</p>
+      <p>Copyright &#169; 2024 Erdison Malko</p>
     </footer>
     <script src="script.js"></script>
   </body>
