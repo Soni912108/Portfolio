@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'app/**' # Only trigger if app folder changes
+      - 'app/**' # Only trigger if content of app/ folder changes
 
 permissions:
   contents: read
