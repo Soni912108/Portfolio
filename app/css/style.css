@@ -50,7 +50,7 @@ z-index: -1;
 
 #socials-container .social-border {
   display: inline-block;
-  padding: 4px;             /* thickness of the ring */
+  padding: 4px;             /* ring thickness */
   border-radius: 50%;
   background: linear-gradient(135deg, #00e676 0%, #00e676 45%, #ffffff 55%, #00e676 100%);
   line-height: 0;
