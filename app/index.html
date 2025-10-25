@@ -251,12 +251,16 @@
             <li><a href="#about">About & Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="https://github.com/Soni912108/Portfolio" target="_blank" rel="noopener noreferrer">Project's GitHub Repo</a></li>
           </ul>
         </div>
       </nav>
       <br>
-      <p>Copyright &#169; 2024 Erdison Malko</p>
+      <p>Copyright &#169; <span id="year"></span> Erdison Malko</p>
     </footer>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
     <script src="js/script.js"></script>
   </body>
 </html>
