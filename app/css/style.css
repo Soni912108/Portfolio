@@ -84,7 +84,7 @@ z-index: -1;
   border-radius: 50%;
 }
 
-/* smaller variant for tight contact layout (optional) */
+/* smaller variant for tight contact layout */
 .contact-info-container .social-border img {
   width: 32px;
   height: 32px;
