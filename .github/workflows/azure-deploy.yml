@@ -7,7 +7,6 @@ on:
     paths:
       - 'app/**' # Only trigger if content of app/ folder changes
 
-
 permissions:
   contents: read
   deployments: write
@@ -18,9 +17,10 @@ concurrency:
 
 jobs:
   build_and_deploy_job:
-    if: github.event_name == 'push'
+    environment: production
     runs-on: ubuntu-latest
     name: Build and Deploy to Azure Static Web Apps
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
