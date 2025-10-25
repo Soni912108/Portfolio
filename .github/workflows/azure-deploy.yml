@@ -7,14 +7,6 @@ on:
     paths:
       - 'app/**' # Only trigger if content of app/ folder changes
 
-permissions:
-  contents: read
-  deployments: write
-
-concurrency:
-  group: "azure-deploy"
-  cancel-in-progress: true
-
 
 jobs:
   build_and_deploy_job:
