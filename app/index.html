@@ -12,8 +12,7 @@
       <div class="logo">Erdison Malko</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Skills</a></li>
+          <li><a href="#about">About & Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -28,8 +27,7 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About & Skills</a></li>
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -53,42 +51,75 @@
         </div>
         <div id="socials-container">
           <a href="https://www.linkedin.com/in/erdison-malko-06b617235/" target="_blank" rel="noopener noreferrer">
-            <img
-              src="./assets/linkedin.png"
-              alt="My LinkedIn profile"
-              class="icon"
-            />
+            <span class="social-border">
+              <img
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+              />
+            </span>
           </a>
           <a href="https://github.com/Soni912108?tab=repositories" target="_blank" rel="noopener noreferrer">
-            <img
-              src="./assets/github.png"
-              alt="My Github profile"
-              class="icon"
-            />
+            <span class="social-border">
+              <img
+                src="./assets/github.png"
+                alt="My Github profile"
+                class="icon"
+              />
+            </span>
           </a>
         </div>
       </div>
     </section>
     <section id="about">
-      <h1 class="title">About Me</h1>
+      <h1 class="title">About & Skills</h1>
       <div class="section-container">
         <div class="about-details-container">
           <div class="about-containers">
             <div class="text-container">
               <p>
-                Passionate Backend Developer & Data Engineer with 4+ years of experience crafting robust, scalable applications and data pipelines. My expertise spans:
+                Passionate Backend Developer & Data Engineer with 4+ years of experience crafting robust, scalable applications and data pipelines. My journey has evolved from pure backend development to data engineering, where I combine technical skills with data science principles to create comprehensive data solutions.
               </p>
-              <ul>
-                <li>Building high-performance backends and APIs using Python (Flask/Django) and Node.js (Express)</li>
-                <li>Designing and implementing data pipelines for ETL processes and real-time data processing</li>
-                <li>Deploying and maintaining applications on cloud platforms like Azure with focus on data services</li>
-                <li>Specializing in data acquisition, web scraping, and data transformation using Python libraries</li>
-                <li>Conducting advanced data analysis and building data models for business intelligence</li>
-                <li>Working with databases (SQL/NoSQL) and data warehousing solutions</li>
-              </ul>
-              <p>
-                My journey has evolved from pure backend development to data engineering, where I combine my technical skills with data science principles to create comprehensive data solutions that drive business value.
-              </p>
+              <div class="skills-grid">
+                <div class="skill-category">
+                  <h3>Backend Development</h3>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">Flask</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">NoSQL</span>
+                    <span class="skill-tag">SQL</span>
+                  </div>
+                </div>
+                <div class="skill-category">
+                  <h3>Data Engineering</h3>
+                  <div class="skill-tags">
+                    <span class="skill-tag">ETL Pipelines</span>
+                    <span class="skill-tag">Data Engineering</span>
+                    <span class="skill-tag">Databricks</span>
+                    <span class="skill-tag">Airflow</span>
+                    <span class="skill-tag">Spark</span>
+                    <span class="skill-tag">Web Scraping</span>
+                  </div>
+                </div>
+                <div class="skill-category">
+                  <h3>Tools</h3>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Git/GitHub</span>
+                    <span class="skill-tag">Azure</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Docker</span>
+                  </div>
+                </div>
+                <div class="skill-category">
+                  <h3>Frontend</h3>
+                  <div class="skill-tags">
+                    <span class="skill-tag">Javascript</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="details-container">
               <div class="education-header">
@@ -107,258 +138,73 @@
         </div>
       </div>
     </section>
-    <section id="experience">
-      <h1 class="title">Skills</h1>
-      <div class="experience-details-container">
-        <div class="experience-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Django</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Flask</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>NodeJS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL/NoSQL</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-            </div>
+    <section id="projects">
+      <h1 class="title">Featured Projects</h1>
+      <div class="projects-horizontal">
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./assets/job-find.png" alt="JobFind - Job Search Platform" />
           </div>
-             
-          <div class="details-container">
-            <h2 class="experience-sub-title">Data Engineering</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Databricks</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Spark</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>ETL Pipelines</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Web Scraping</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
+          <div class="project-info">
+            <h3>JobFind</h3>
+            <p>Full-stack job search platform with chat integration and search features</p>
+            <div class="project-tech">
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Javascript</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Docker</span>
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Other</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git/GitHub</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Azure/AWS</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Docker</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML/CSS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
+            <a href="https://github.com/Soni912108/JobFind" target="_blank" class="project-link">View on GitHub</a>
           </div>
         </div>
-      </div>
 
-    </section>
-    <section id="projects">
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="projects-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/chat-app.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">ChatApp</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://github.com/Soni912108/chat-app"
-                target="_blank"
-                
-              >
-                Github
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href="https://chatapp2.azurewebsites.net/"
-                target="_blank"
-              >
-                ChatApp
-              </a>
-            </div>
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./assets/inventory-app.png" alt="Inventory App - Database Management" />
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/taskmanager.jpg"
-                alt="Project 1"
-                class="project-img"
-              />
+          <div class="project-info">
+            <h3>Inventory App</h3>
+            <p>Data-driven inventory management system with analytics and reporting</p>
+            <div class="project-tech">
+              <span class="tech-tag">TypeScript</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Django</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">SQLite</span>
             </div>
-            <h2 class="experience-sub-title project-title">Task Manager</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href='https://github.com/Soni912108/expressApp'
-                target="_blank"
-              >
-                Github
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                href='https://react-app-psi-wheat.vercel.app/'
-                target="_blank"
-              >
-                TaskManger
-              </a>
-            </div>
+            <a href="https://github.com/Soni912108/Inventory-App" target="_blank" class="project-link">View on GitHub</a>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/inventory-app.jpg"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Inventory App</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href='https://github.com/Soni912108/Inventory-App'
-                target="_blank"
-              >
-                Github
-              </a>
-            </div>
+        </div>
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./assets/hr-assistant.png" alt="HR Assistant - AI Chatbot" />
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/chatbot.avif"
-                alt="Project 2"
-                class="project-img"
-              />
+          <div class="project-info">
+            <h3>HR Assistant</h3>
+            <p>AI-powered HR chatbot for employee queries and process automation</p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">OpenAI</span>
+              <span class="tech-tag">Flask</span>
+              <span class="tech-tag">SQLite</span>
             </div>
-            <h2 class="experience-sub-title project-title">HR Assistant</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                href='https://github.com/Soni912108/hr_assistant'
-                target="_blank"
-              >
-                Github
-              </a>
-            </div>
+            <a href="https://github.com/Soni912108/HR-Assistant-App" target="_blank" class="project-link">View on GitHub</a>
           </div>
+        </div>
+        <div class="project-item">
+          <div class="project-image">
+            <img src="./assets/task-manager-api.png" alt="TaskManagerAPI - Task Management" />
+          </div>
+          <div class="project-info">
+            <h3>TaskManagerAPI</h3>
+            <p>RESTful API for task management with user authentication and real-time updates</p>
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MongoDB</span>
+            </div>
+            <a href="https://github.com/Soni912108/TaskManagerAPI" target="_blank" class="project-link">View on GitHub</a>
           </div>
         </div>
       </div>
@@ -367,27 +213,33 @@
       <p class="section__text__p1">Get in Touch</p>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
+          <span class="social-border">
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+          </span>
           <p><a href="mailto:erdisonmalko@gmail.com">erdisonmalko@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/github.png"
-            alt="Git icon"
-            class="icon contact-icon git-icon"
-          />
+          <span class="social-border">
+            <img
+              src="./assets/github.png"
+              alt="Git icon"
+              class="icon contact-icon git-icon"
+            />
+          </span>
           <p><a href="https://github.com/Soni912108?tab=repositories" target="_blank">erdison</a></p>
         </div>
         <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
+          <span class="social-border">
+            <img
+              src="./assets/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+          </span>
           <p><a href="https://www.linkedin.com/in/erdison-malko-06b617235/" target="_blank">LinkedIn</a></p>
         </div>
       </div>
@@ -396,13 +248,13 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
+            <li><a href="#about">About & Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
+      <br>
       <p>Copyright &#169; 2024 Erdison Malko</p>
     </footer>
     <script src="js/script.js"></script>
